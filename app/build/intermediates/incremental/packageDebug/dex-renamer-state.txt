@@ -1,0 +1,7 @@
+#Sun Apr 09 20:21:41 EDT 2017
+base.0=C\:\\Users\\Minky\\Desktop\\Watopia\\Watopia\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_3f76076cc1729eb88a4c1ce83ad03f556a9879b6
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Minky\\Desktop\\Watopia\\Watopia\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_0e01ecc3f0dcceaa8527931a125df9fbc2cd8f8a\\classes.dex
+base.1=C\:\\Users\\Minky\\Desktop\\Watopia\\Watopia\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_0e01ecc3f0dcceaa8527931a125df9fbc2cd8f8a
+file.0=C\:\\Users\\Minky\\Desktop\\Watopia\\Watopia\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_3f76076cc1729eb88a4c1ce83ad03f556a9879b6\\classes.dex

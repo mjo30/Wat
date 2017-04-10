@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Minky\\Desktop\\Watopia\\Watopia\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_worker.xml",
+        "source": "C:\\Users\\Minky\\Desktop\\Watopia\\Watopia\\app\\src\\main\\res\\menu\\menu_worker.xml"
+    },
+    {
+        "merged": "C:\\Users\\Minky\\Desktop\\Watopia\\Watopia\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_view.xml",
+        "source": "C:\\Users\\Minky\\Desktop\\Watopia\\Watopia\\app\\src\\main\\res\\menu\\menu_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Minky\\Desktop\\Watopia\\Watopia\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_user.xml",
+        "source": "C:\\Users\\Minky\\Desktop\\Watopia\\Watopia\\app\\src\\main\\res\\menu\\menu_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\Minky\\Desktop\\Watopia\\Watopia\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_view_report.xml",
+        "source": "C:\\Users\\Minky\\Desktop\\Watopia\\Watopia\\app\\src\\main\\res\\menu\\menu_view_report.xml"
+    }
+]

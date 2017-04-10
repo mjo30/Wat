@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93a0248fe0524b4fa2d16f5f7c3cff8452796454">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.6.0_9e88593323f010091cf366dc05b52dde36420a8b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6d16df2955bbd154b36819386cfd2e3b7f7cae5b">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-9.6.0_a76301e9fdacbd2febc0b7a82fd77c543838b563\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d1e7862a5a7675940acb6efcab34b38de89c9e18">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-9.6.0_d073ee9c5dd854f1b7c9d4399f9bb998bc5cfe19\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="300e72616fdf265bb36bff7adb1ebec7b1d72817">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-9.6.0_53c6e3d9cfa7a57d421d06243447ad8f3368aed2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.1_721f442d05e485ee217ac5f8eb9bfa4cc6b2d18f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.1_f597eb6db5e918434b5d9fdeb385f09fc3a15045\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7a343e17f154f513a09c12946fae0f172be079ec">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.6.0_d5b04b1f31e167438d68450dbd37c43a90628bdb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf803332f826adea247cc452d0bb04d7943f0007">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-9.6.0_ea4aeb8a1cfb29202f50ea226e9fb34264130212\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ba2f029ff37297295d2d197ac6e957b361bfccaf">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-9.6.0_17e90dd9ead46562dfa145616082a6aa8e9c2cf1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="938ba83fbb26987368049237e47718d56e91e222">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-9.6.0_ec3c27f3316af8aa1353e47c8932f328eb8a9394\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb96a230c7b55d545fbdee45157a5a75b2b26284">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-9.6.0_312e41d26cb1a4b732832f6675802cf917a642dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="74d1712880eb2b4ab37ddf3c6a3232c883756726">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.6.0_ef385a730c15e9254e6ad738013da76459e7b0ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="580fa73d5bf63ffd04b9d66d0e75a2ed21842702">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.6.0_a0d7542203a59cf313e1402aee3882ef340aaa35\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.1_1e1f527a9488aa7600e3868ca3ed4f78cbe05d84\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5243af50631020511cf2403789678149b1a319e6">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.6.0_80d4238601cf236ab3584f39bae6bfce6343a85d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1f4bb2577a30d0b3268fed038ed59230709ad593">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-9.6.0_1a38b8d1d0f6c1520fe4318759c190d4b9474e3f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.1_bf5d5aaa78e98e7a59b21d610789abd27d0419db\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f2c9c986087e5862518757d0c988c8eac1a47bfd">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-9.6.0_96f46db3a685a4b9fcaa24cb4c295f6d8622a078\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43ab9b69758a0f22706629223c367e9bd478e1a8">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-9.6.0_cce7c0086958cde31fc711762926badb2e7b5ec7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="614b2ffd04818e865e1c02cc149c6b92e518e862">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.6.0_9c4dc1d67c9f075a84f66c772d226b6e75020d98\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4e276ebfc4dba1199c246b0ca2a0e3452d8822d8">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0e01ecc3f0dcceaa8527931a125df9fbc2cd8f8a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3270d392adef5decc7bace1a3c2e749bec7bf19e">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-places-9.6.0_2c24a885bf9eb3ecd5c3d98b64e7e2d0e20a3b26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a5da6fc5a6f39aee309ae6ae670e1b942759dc51">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-9.6.0_28aeb844f3872a72cdee723699ce5c8f60dbd9f5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a723c85825d9591baec200523c10662e30c8bed7">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-9.6.0_662d63cf3aa8adb307ec1529d976da6d03143000\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c48db997d87eb3e3ad47713cfbfe7cb878a2e66c">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-9.6.0_7b4d1c0bc040e6731d9b7bd53e2dcb1b6cccae62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="97e3259dcdaa9b33014a849f6d3bdbb4ef478383">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-9.6.0_56e0c7be87aae7f8065e6194fa7afb979897b039\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9f5c557145ddef094005eb73d72a7eaf330a0cf1">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-9.6.0_ec10b7210c3e1b7d789699fcdece4ea45de6c435\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.1_36a6d9d2d61899822d5088c9eff32fad0e8c9404\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d39f676be8400123523882d189a1d84040d34339">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.6.0_cad202b9d4359b47cd39124eab870b5b47858f74\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.1_b37a28f90ed1c085301b984c9f0bb6088d537d28\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="53f7fbab5e6f4149eb5a1cdeabaeeeee11a84ebe">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-9.6.0_010a55551b2f62d1dcecba62c4200b16ee633240\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\design\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.1_d567f13fcabb99befb83518c91fd2b1eb015bb66\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-24.0.0_a7dc2ea567b6e6c4f0aa9d2c34fa4156356fc1a6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f4540ad2a6e3741694e9332f0c20607c780fae6c">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-9.6.0_0895697727c5f7699ee6cb09e3840ca084dbfc81\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-24.0.0_6ca26c0f0e15968d0d385aa04dff434a04e4aade\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5e651c1430cc9b8a3b3b5a9d92bb173214dfdf42">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-9.6.0_a93c4ac99614182384d697179a9c3533808dbbf3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-instantapps\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5fef4ad8c5b2519596b80a241d56b69dffcd6845">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-instantapps-9.6.0_8cf366c2b8c283d9780dbcbca2d78015ffd82fa6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ef21408e3142ffbfbd4a7ec1762c3325c6c386c">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-9.6.0_332232c4149b2d79e3ea17badaf7938b5cca06a4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_75c422e8e4331fdd937b08bcf17eaa0f9bcff0e9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.1_24fb82bfeb546fb2cb1aa071543636a4f924b37c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd11b3899f275668a9355f19cea2c2320f5f9d14">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.6.0_53361bc4c4d3abd10e31222ed3d15da2c99c8ffd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6079f942bb34faee179b4c46396a26fbbfc43e5d">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-9.6.0_ebc750c7ed83fa4b78b705d11c3a00e35c06c430\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a93aa431de60b775c91158433f3c687f1d32cb9c">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.6.0_045ff174c40eb40271a506e2c46173831177f374\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="73699fb64ea3de4a43d0f5c37dc525a5e1341ca1">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-9.6.0_d8c1f64d431b999eb79c3e4e0dc78f02d4ffa975\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7357a05eea2a049c33488c7e8c6f887b3483d4b8">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-9.6.0_c4d962eb821d992a8c7de5501b48938305f8831c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.1_342ae88cec2cb62ad04d353f9531f289228e93ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f861fce2e9fa167e7fe8d8558cf2cbb910b9fb34">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.6.0_2f72352a32b35c4e21ca316dcded57d970cdd9f9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="415336382149f2a79eb80599e340e188f6724d6d">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-9.6.0_dfe88068571e93046d3096730874271151675ec9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="26cd46f7bc6e1f269062b61269317a29329a9a7b">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-awareness-9.6.0_faa886bc601b5487be32970e4704aa33d179824f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4cfc5a74aa9453cbec685cdbcb3e3f3539b483bd">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-9.6.0_96b84994caba0bf8be786c21a7c82e833b1e92c9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_489189bf067193c2da74ad0342dcd6b5df3155aa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="12e94600a0ea3beae6ea0f1d18a0768ded5bc1ae">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-9.6.0_c3705e689cfa886d0d834029014b2dd0763b53e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a917154cf730ea6ec2495705309e6a4065cde2ac">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-9.6.0_05625854840d1a5b092db2ee8ba6b58e53afb6bb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4ab00b7d310cfdfff3a9446554485647153d0792">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-9.6.0_03a19016dbb70304255c99a3c0e52fe04845992e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="db0a4170961a16af6d7a5222bf90a5876eea4227">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.6.0_6eb0ae034a8033bc3adbfec7e045f8eaa7e326ef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ce5313bb5ccc0c1e10c995e4efb2f2b08c848b39">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-9.6.0_f6d5d53d9aa1d4f5c12863f881a89eadd5f4ca97\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de2c50f4a24277d22d675d598640da6d4622b14d">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-9.6.0_b6876da669799801bb6190ef1c6781f357d5538a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.1_d0e915730e262e7777df9c0fa425882a3c00f5da\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a9f41e6463de88c3f979d796382fc24fb7e9cd41">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.6.0_32c263da29e84f12839f2ed8bde8dec4100397b9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.1_fc06b500fd09f735b72c81a8e908ef8850e44d11\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\.gradle\caches\modules-2\files-2.1\com.github.PhilJay\MPAndroidChart\v3.0.1\369f9aa48a629b4e92557b37326f42dc3de796e4\MPAndroidChart-v3.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="369f9aa48a629b4e92557b37326f42dc3de796e4">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\MPAndroidChart-v3.0.1_3bc638ab50fcdfab1fbe340a2738e988001eb63d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="095278fc3a6444b320dc4b20bda76afbe23ec612">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3f76076cc1729eb88a4c1ce83ad03f556a9879b6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f6afcfbf1989631424f9ceaae6ee24777d3cf6ba">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.6.0_4bf4b7c14e41b073303118787c7e544208988f3b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea5537e2a88ce0497d3e2272b1cf93f2e0c77b0d">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-9.6.0_37058cdfabfef3bd6dac7adaac151f29927045ab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="266e4ac186afacc3b220a0cf8382348283b42407">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-9.6.0_cc80efa35a52b4078f5c76cfd002f6c6be09425c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d57767271a9c140da143ec0db9a0673b6d96eccb">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-9.6.0_21b5cd07d45a89952138b1f6993ac1b98e5b4abe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.1_4821f518cc4d7c6ffc0eaccdc117e8e6b861d6b2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\9.6.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1bf2ceb0034efe20249a561096f6e288cce7a0a4">
+        <dex dex="C:\Users\Minky\Desktop\Watopia\Watopia\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-9.6.0_d9bdd9b2148683c8e023e62d619e3eb7a8f7ed99\classes.dex" />
+    </item>
+
+</items>
