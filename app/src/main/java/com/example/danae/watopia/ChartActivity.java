@@ -1,6 +1,5 @@
 package
         com.example.danae.watopia;
-
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -25,6 +24,7 @@ import java.util.Random;
 public class ChartActivity extends AppCompatActivity {
     private DataSource db;
     private List<Data> data = new ArrayList<>();
+    private int startYear;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -38,13 +38,19 @@ public class ChartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chart);
         LineChart lineChart = (LineChart) findViewById(R.id.chart);
         List<QualityReport> reports = db.getAllReports();
+        GraphSetting settings = new GraphSetting();
+        startYear = settings.getYearStart();
+        int yearApart = settings.getYearEnd() - startYear;
         //dummy year data
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < yearApart; i++) {
             Random rand = new Random();
-            data.add(new Data(2005 + i, (double) rand.nextInt(50)));
+            data.add(new Data(startYear + i, (double) rand.nextInt(50)));
         }
+        String location = settings.getSelectedLoc();
         for (QualityReport r : reports) {
-            data.add(new Data(r.getYear(), r.getContamination()));
+            if (r.getLocation().equals(location)) {
+                data.add(new Data(r.getYear(), r.getContamination()));
+            }
         }
         List<Entry> entries = convertDataSetToEntry(data);
         LineDataSet dataset = new LineDataSet(entries, "# of Reports");

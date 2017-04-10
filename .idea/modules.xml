@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Watopia.iml" filepath="$PROJECT_DIR$/Watopia.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Wat.iml" filepath="$PROJECT_DIR$/Wat.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
