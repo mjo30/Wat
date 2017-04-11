@@ -1,12 +1,11 @@
 package com.example.danae.watopia.model;
 
-/**
- * Created by danae on 3/29/2017.
- */
+
+import android.support.annotation.NonNull;
 
 public class Data implements Comparable {
-    public int x;
-    public double y;
+    public final int x;
+    public final double y;
     /**
      * constructor for Data
      */
@@ -18,7 +17,7 @@ public class Data implements Comparable {
      *@return the number indicating which object is greater.
      */
     @Override
-    public int compareTo(Object o) {
+    public int compareTo(@NonNull Object o) {
         Data d = (Data) o;
         return x - d.x;
 
