@@ -1,4 +1,3 @@
-// how to write javadoc for menu??
 
 package com.example.danae.watopia;
 
