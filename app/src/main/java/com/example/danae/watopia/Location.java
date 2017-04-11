@@ -1,13 +1,11 @@
 package com.example.danae.watopia;
 
-/**
- * Created by Soyeon on 3/12/2017.
- */
+
 
 public class Location {
 
-    private double _latitude;
-    private double _longitude;
+    private final double _latitude;
+    private final double _longitude;
     /**
      * public constructor for Location object.
      */
