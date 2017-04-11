@@ -4,11 +4,9 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-/**
- * Created by Minky on 2017-04-02.
- */
 
-public class SourceDbHelper extends SQLiteOpenHelper {
+
+class SourceDbHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "source.db";
     private static final int DATABASE_VERSION = 1;
 
