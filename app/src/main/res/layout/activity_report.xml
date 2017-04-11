@@ -12,7 +12,7 @@
     tools:context="com.example.danae.watopia.Report">
 
     <TextView
-        android:text="Name"
+        android:text="@string/Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -26,16 +26,19 @@
         android:ems="10"
         android:layout_below="@+id/textView10"
         android:layout_alignParentStart="true"
-        android:id="@+id/nameEdit" />
+        android:id="@id/nameEdit"
+        android:labelFor="@+id/nameEdit"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:hint="@string/Name"
         android:ems="10"
         android:id="@+id/dateEdit"
+        android:labelFor="@+id/dateEdit"
         android:layout_below="@+id/textView12"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:inputType="date" />
 
 
     <EditText
@@ -46,6 +49,7 @@
         android:layout_below="@+id/textView28"
         android:layout_alignParentStart="true"
         android:id="@+id/longEdit"
+        android:labelFor="@+id/longEdit"
         android:layout_alignParentEnd="true" />
 
     <Spinner
@@ -65,14 +69,15 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:ems="10"
         android:layout_below="@+id/textView17"
         android:layout_alignStart="@+id/textView17"
-        android:id="@+id/numberEdit" />
+        android:id="@+id/numberEdit"
+        android:labelFor="@+id/numberEdit"
+        android:inputType="number" />
 
     <TextView
-        android:text="Latitude"
+        android:text="@string/Latitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView27"
@@ -81,7 +86,7 @@
 
 
     <TextView
-        android:text="Water Type"
+        android:text="@string/Water_Type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView16"
@@ -89,7 +94,7 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Date / Time"
+        android:text="@string/Date_Time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView12"
@@ -97,7 +102,7 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Water Condition"
+        android:text="@string/Water_condition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView14"
@@ -110,11 +115,12 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/latEdit"
+        android:labelFor="@+id/latEdit"
         android:layout_below="@+id/textView27"
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Longitude"
+        android:text="@string/Longitude"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView28"
@@ -122,7 +128,7 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Report Number"
+        android:text="@string/Report_Number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView17"
@@ -131,7 +137,7 @@
 
     <Button
         android:background="@color/buttonyellow"
-        android:text="submit"
+        android:text="@string/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/submitBtn"
