@@ -9,7 +9,7 @@ import android.widget.Button;
 public class ErrorScreen extends AppCompatActivity {
    /**
      * Creates an error screen.
-     * Creates a button object to return from the error screen.
+     * Creates a button object to return from the error screen
      */
 
     @Override
