@@ -10,25 +10,22 @@ import com.example.danae.watopia.model.QualityReport;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by danae on 3/27/2017.
- */
 
 // This is a database written with sqlite.
-public class WaterReportDAO {
+class WaterReportDAO {
     //Database table column names
-    public static final String TABLE_NAME = "WaterReport";
-    public static final String COLUMN_ID = "id";
-    public static final String COLUMN_NAME = "name";
-    public static final String COLUMN_DATE = "date";
-    public static final String COLUMN_LOCATION = "location";
+    private static final String TABLE_NAME = "WaterReport";
+    private static final String COLUMN_ID = "id";
+    private static final String COLUMN_NAME = "name";
+    private static final String COLUMN_DATE = "date";
+    private static final String COLUMN_LOCATION = "location";
 //    public static final String COLUMN_LATITUDE = "latitude";
 //    public static final String COLUMN_LONGITUDE = "longitude";
     //public static final String COLUMN_TYPE = "water type";
-    public static final String COLUMN_CONDITION = "water_condition";
-    public static final String COLUMN_VIRUS = "water_virus";
-    public static final String COLUMN_CONTAMINATION = "water_contamination";
-    public static final String[] allColumns = {WaterReportDAO.COLUMN_DATE, WaterReportDAO.COLUMN_ID,
+    private static final String COLUMN_CONDITION = "water_condition";
+    private static final String COLUMN_VIRUS = "water_virus";
+    private static final String COLUMN_CONTAMINATION = "water_contamination";
+    private static final String[] allColumns = {WaterReportDAO.COLUMN_DATE, WaterReportDAO.COLUMN_ID,
             WaterReportDAO.COLUMN_NAME, WaterReportDAO.COLUMN_LOCATION,
              WaterReportDAO.COLUMN_CONDITION, WaterReportDAO.COLUMN_VIRUS, WaterReportDAO.COLUMN_CONTAMINATION};
     private static final int ID_NUMBER = 1;
@@ -157,28 +154,30 @@ public class WaterReportDAO {
         return report;
     }
 
-    /**
-     * finds the report by date
-     * @param database database of the report
-     * @param date date of the report published
-     * @return quality report that one was searching
-     */
-    public static QualityReport findByDate(SQLiteDatabase database, String date) {
-        String query = "SELECT * FROM " + TABLE_NAME + " WHERE " + COLUMN_DATE + " ='" + date;
-        Cursor  cursor = database.rawQuery(query,null);
-        QualityReport report = null;
-
-        if (cursor != null) {
-            cursor.moveToFirst();
-
-            report = cursorToWaterReport(cursor);
-
-            cursor.close();
-
-        }
-
-
-
-        return report;
-    }
+// --Commented out by Inspection START (4/11/2017 1:42 AM):
+//    /**
+//     * finds the report by date
+//     * @param database database of the report
+//     * @param date date of the report published
+//     * @return quality report that one was searching
+//     */
+//    public static QualityReport findByDate(SQLiteDatabase database, String date) {
+//        String query = "SELECT * FROM " + TABLE_NAME + " WHERE " + COLUMN_DATE + " ='" + date;
+//        Cursor  cursor = database.rawQuery(query,null);
+//        QualityReport report = null;
+//
+//        if (cursor != null) {
+//            cursor.moveToFirst();
+//
+//            report = cursorToWaterReport(cursor);
+//
+//            cursor.close();
+//
+//        }
+//
+//
+//
+//        return report;
+//    }
+// --Commented out by Inspection STOP (4/11/2017 1:42 AM)
 }
