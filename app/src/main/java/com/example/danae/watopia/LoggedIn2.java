@@ -22,7 +22,7 @@ public class LoggedIn2 extends AppCompatActivity {
     
    /**
      * inflates the options menu for the logged in screen
-     * @returs true the option menu is inflated.
+     * @return true the option menu is inflated.
      */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
