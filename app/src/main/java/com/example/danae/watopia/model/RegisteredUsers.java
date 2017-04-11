@@ -2,47 +2,56 @@ package com.example.danae.watopia.model;
 
 import java.util.Arrays;
 import java.util.List;
-/**
- * Created by danae on 2/21/2017.
- */
 
 public class RegisteredUsers {
     public static List<String> LegalStandings = Arrays.asList("User",
             "Worker", "Admin", "Manager");
     private static int next_ID = 0;
-    public int id;
-    private String email;
-    private String password;
-    private String name;
-    private Standing standing;
+    private final int id;
+    private final String email;
+    private final String password;
+    private final String name;
+    private final Standing standing;
     public String getName() {
         return name;
     }
     public String getPassword() {return password;}
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
+// --Commented out by Inspection START (4/11/2017 1:40 AM):
+// --Commented out by Inspection START (4/11/2017 1:40 AM):
+// --Commented out by Inspection START (4/11/2017 1:40 AM):
+//////    public int getId() {
+//////        return id;
+//////    }
+////// --Commented out by Inspection STOP (4/11/2017 1:40 AM)
+////    public void setId(int id) {
+////        this.id = id;
+////    }
+//// --Commented out by Inspection STOP (4/11/2017 1:40 AM)
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+// --Commented out by Inspection STOP (4/11/2017 1:40 AM)
     public String getEmail() {
         return email;
     }
-    public void setEmail(String email) {
-        this.email = email;
-    }
-    public void setPassword(String password) {
-        this.password = password;
-    }
+// --Commented out by Inspection START (4/11/2017 1:41 AM):
+// --Commented out by Inspection START (4/11/2017 1:41 AM):
+////    public void setEmail(String email) {
+////        this.email = email;
+////    }
+//// --Commented out by Inspection STOP (4/11/2017 1:41 AM)
+//    public void setPassword(String password) {
+//        this.password = password;
+//    }
+// --Commented out by Inspection STOP (4/11/2017 1:41 AM)
     public Standing getStanding() {
         return standing;
     }
-    public void setStanding(Standing standing) {
-        this.standing = standing;
-    }
+// --Commented out by Inspection START (4/11/2017 1:41 AM):
+//    public void setStanding(Standing standing) {
+//        this.standing = standing;
+//    }
+// --Commented out by Inspection STOP (4/11/2017 1:41 AM)
     /**
      * constructor for RegisteredUsers
      */
