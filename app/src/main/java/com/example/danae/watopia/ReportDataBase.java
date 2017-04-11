@@ -8,26 +8,28 @@ import java.util.List;
 
 import com.example.danae.watopia.model.QualityReport;
 
-/**
- * Created by danae on 3/27/2017.
- */
+
 
 public class ReportDataBase implements DataSource {
     private SQLiteDatabase database;
-    private ReportDbHelper helper;
+    private final ReportDbHelper helper;
     public ReportDataBase(Context context) {
         helper = new ReportDbHelper(context);
         open();
     }
-    public ReportDataBase() {
-        open();
-    }
+// --Commented out by Inspection START (4/11/2017 1:41 AM):
+//    public ReportDataBase() {
+//        open();
+//    }
+// --Commented out by Inspection STOP (4/11/2017 1:41 AM)
     private void open() throws SQLException{
         database = helper.getWritableDatabase();
     }
-    public void close() {
-        helper.close();
-    }
+// --Commented out by Inspection START (4/11/2017 1:41 AM):
+//    public void close() {
+//        helper.close();
+//    }
+// --Commented out by Inspection STOP (4/11/2017 1:41 AM)
 //create(SQLiteDatabase database, String name, String date,String location,String virus, String condition, String contamination) {
     @Override
     public QualityReport createReport(String name, String date, String location, String virus,
@@ -49,13 +51,8 @@ public class ReportDataBase implements DataSource {
         return WaterReportDAO.getAllReports(database);
     }
 
-    @Override
-    public void updateReport(QualityReport report) {
-
-    }
 
 
-    @Override
     public QualityReport findReportByName(String name) {
         return WaterReportDAO.findByName(database, name);
     }
