@@ -1,8 +1,6 @@
 package com.example.danae.watopia;
 
 import android.content.Intent;
-import android.icu.text.SimpleDateFormat;
-import android.icu.util.Calendar;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -25,21 +23,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EditReport extends AppCompatActivity {
-    private int placed;
-    ViewReport reports;
-    WaterReport selected;
-    EditText nameEdit;
-    EditText locationEdit;
-    DataReportSource databaseReport;
-    EditText latEdit;
-    EditText longEdit;
-    EditText dateEdit;
-    TextView numberEdit;
-    Spinner typeSpinner;
-    Spinner conditionSpinner;
-    Button submitBtn;
-    DataBaseHandler db;
-    private String date = null;
+    private WaterReport selected;
+    private TextView nameEdit;
+    // --Commented out by Inspection (4/11/2017 1:37 AM):EditText locationEdit;
+    private DataReportSource databaseReport;
+    private EditText latEdit;
+    private EditText longEdit;
+    private EditText dateEdit;
+    private Spinner typeSpinner;
+    private Spinner conditionSpinner;
+    private DataBaseHandler db;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -50,8 +43,8 @@ public class EditReport extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_report);
-        reports = new ViewReport();
-        placed = reports.getPlaced();
+        ViewReport reports = new ViewReport();
+        int placed = reports.getPlaced();
         databaseReport = new SourceDataBase(this);
         int j = 0;
         for (WaterReport r: databaseReport.getAllReports()) {
@@ -61,14 +54,14 @@ public class EditReport extends AppCompatActivity {
                 selected = r;
             }
         }
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        date = df.format(Calendar.getInstance().getTime());
+        //SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        //String date = df.format(Calendar.getInstance().getTime());
         dateEdit = (EditText) findViewById(R.id.dateEdit);
         dateEdit.setText(selected.getDate());
-        db = new DataBaseHandler(EditReport.this, null, null, 5);
-        nameEdit = (EditText) findViewById(R.id.nameEdit);
+        db = new DataBaseHandler(EditReport.this);
+        nameEdit = (TextView) findViewById(R.id.nameEdit);
         nameEdit.setText(db.getName(LoginActivityPage.getUserName()));
-        numberEdit = (TextView) findViewById(R.id.numberEdit);
+        TextView numberEdit = (TextView) findViewById(R.id.numberEdit);
         String number = "" + placed;
         numberEdit.setText(number);
         typeSpinner = (Spinner) findViewById(R.id.typeSpinner);
@@ -80,7 +73,7 @@ public class EditReport extends AppCompatActivity {
         longEdit = (EditText) findViewById(R.id.longEdit);
         String longt = "" + selected.getLongitude();
         longEdit.setText(longt);
-        List<String> types = new ArrayList<String>();
+        List<String> types = new ArrayList<>();
         int selection = 0;
         for (int i = 0; i < WaterType.values().length; i++) {
             if (WaterType.values()[i].toString().equals(selected.getWaterType())) {
@@ -88,24 +81,24 @@ public class EditReport extends AppCompatActivity {
             }
             types.add(WaterType.values()[i].toString());
         }
-        ArrayAdapter<String> typesAdapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> typesAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, types);
         typesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         typeSpinner.setAdapter(typesAdapter);
         typeSpinner.setSelection(selection);
-        List<String> conditions = new ArrayList<String>();
+        List<String> conditions = new ArrayList<>();
         for (int i = 0; i < WaterCondition.values().length; i++) {
             if (WaterCondition.values()[i].toString().equals(selected.getWaterCondition())) {
                 selection = i;
             }
             conditions.add(WaterCondition.values()[i].toString());
         }
-        ArrayAdapter<String> conditionsAdapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> conditionsAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, conditions);
         conditionsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         conditionSpinner.setAdapter(conditionsAdapter);
         conditionSpinner.setSelection(selection);
-        submitBtn = (Button) findViewById(R.id.submitBtn);
+        Button submitBtn = (Button) findViewById(R.id.submitBtn);
 
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,7 +109,7 @@ public class EditReport extends AppCompatActivity {
                         conditionSpinner.getSelectedItem().toString());
                 databaseReport.deleteReport(selected);
                 //report.getReportList().set(placed, report);
-                Location newLocation = new Location(Double.parseDouble(latEdit.getText().toString()), Double.parseDouble(longEdit.getText().toString()));
+                //Location newLocation = new Location(Double.parseDouble(latEdit.getText().toString()), Double.parseDouble(longEdit.getText().toString()));
                 //report.setLocation(newLocation);
                 if (db.getKeyStanding(LoginActivityPage.getUserName()).equals("Manager")) {
                     startActivity(new Intent(getApplicationContext(), managerLoggedIn.class));
@@ -134,7 +127,7 @@ public class EditReport extends AppCompatActivity {
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
-    public Action getIndexApiAction() {
+    private Action getIndexApiAction() {
         Thing object = new Thing.Builder()
                 .setName("EditReport Page") // TODO: Define a title for the content shown.
                 // TODO: Make sure this auto-generated URL is correct.
