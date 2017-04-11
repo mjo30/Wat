@@ -13,7 +13,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.danae.watopia.model.QualityReport;
-import com.example.danae.watopia.model.WaterReport;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,13 +21,15 @@ import java.util.List;
 // Creates a new quality report.
 // Contains date, number, name, location, virus PPM, contamination PPM, and water condition.
 public class qualityReport extends AppCompatActivity {
-    TextView date, number, name;
-    EditText location, virus, contamination;
-    Spinner condition;
-    Button submitBtn, cancelBtn;
-    DataBaseHandler db;
+    private TextView date;
+    private TextView name;
+    private EditText location;
+    private EditText virus;
+    private EditText contamination;
+    private Spinner condition;
+    private DataBaseHandler db;
     private DataSource data;
-    static int count = 0;
+    private static int count = 0;
     
     // Generates date and time by using Calendar and shows it to users
     // Number is incremented when new report is created.
@@ -45,16 +46,16 @@ public class qualityReport extends AppCompatActivity {
         date = (TextView) findViewById(R.id.dateEdit);
         date.setText(dateStr);
 
-        db = new DataBaseHandler(qualityReport.this, null, null, 4);
+        db = new DataBaseHandler(qualityReport.this);
         name = (TextView) findViewById(R.id.nameEdit);
         name.setText(db.getName(LoginActivityPage.getUserName()));
 
         //final QualityReport report = new QualityReport();
-        number = (TextView) findViewById(R.id.numberEdit);
+        TextView number = (TextView) findViewById(R.id.numberEdit);
         for (QualityReport r: data.getAllReports()) {
             count++;
         }
-        number.setText(""+count);
+        number.setText(getString(R.string.blank,count));
 
         location = (EditText) findViewById(R.id.locationEdit);
         virus = (EditText) findViewById(R.id.virusEdit);
@@ -62,17 +63,17 @@ public class qualityReport extends AppCompatActivity {
 
         condition = (Spinner) findViewById(R.id.conditionSpinner);
 
-        List<String> types = new ArrayList<String>();
+        List<String> types = new ArrayList<>();
         types.add(0, "Safe");
         types.add(1, "Treatable");
         types.add(2, "Unsafe");
-        ArrayAdapter<String> typesAdapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> typesAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, types);
         typesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         condition.setAdapter(typesAdapter);
 
-        submitBtn = (Button) findViewById(R.id.edit);
-        cancelBtn = (Button) findViewById(R.id.cancelBtn);
+        Button submitBtn = (Button) findViewById(R.id.edit);
+        Button cancelBtn = (Button) findViewById(R.id.cancelBtn);
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
