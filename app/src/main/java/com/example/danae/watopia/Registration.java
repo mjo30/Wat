@@ -16,13 +16,12 @@ import com.example.danae.watopia.model.Standing;
 import java.util.Arrays;
 
 public class Registration extends AppCompatActivity {
-    private Button register;
     private EditText fullName;
     private EditText email;
     private EditText newPassword;
     private Spinner standingSpinner;
-    static DataBaseHandler db;
-    private Standing standing = Standing.USER;
+    private DataBaseHandler db;
+    // --Commented out by Inspection (4/11/2017 1:41 AM):private Standing standing = Standing.USER;
     /**
      * This onCreate method is called when users try to register.
      * Field for full name, email, and password are filled by users by typing their info in.
@@ -38,16 +37,16 @@ public class Registration extends AppCompatActivity {
         fullName = (EditText) findViewById(R.id.name);
         email = (EditText) findViewById(R.id.email);
         newPassword = (EditText) findViewById(R.id.newPass);
-        register = (Button) findViewById(R.id.registered);
+        Button register = (Button) findViewById(R.id.registered);
         standingSpinner = (Spinner) findViewById(R.id.spinner);
-        ArrayAdapter<Standing> adapter = new ArrayAdapter<Standing>(
+        ArrayAdapter<Standing> adapter = new ArrayAdapter<>(
                 this, android.R.layout.simple_spinner_item,
                 Arrays.asList(Standing.values()));
         standingSpinner.setAdapter(adapter);
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                db = new DataBaseHandler(Registration.this, null, null, 2);
+                db = new DataBaseHandler(Registration.this);
                 RegisteredUsers user = new RegisteredUsers(fullName.getText().toString(),
                         email.getText().toString(), newPassword.getText().toString(),
                         (Standing) standingSpinner.getSelectedItem());
@@ -56,10 +55,6 @@ public class Registration extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), LoginActivityPage.class));
             }
         });
-    }
-
-    public static DataBaseHandler getDb() {
-        return db;
     }
 
 }
