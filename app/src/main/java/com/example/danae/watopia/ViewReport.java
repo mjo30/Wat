@@ -19,19 +19,17 @@ import java.util.List;
 
 
 public class ViewReport extends AppCompatActivity {
-    private ListView lv;
-    private static String name;
+    // --Commented out by Inspection (4/11/2017 1:41 AM):private static String name;
     private static int placed = 0;
-    private WaterReport report = new WaterReport();
-    Button viewMapButton;
-    private DataReportSource data;
+    // --Commented out by Inspection (4/11/2017 1:41 AM):private WaterReport report = new WaterReport();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         int order = 0;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_report);
-        data = new SourceDataBase(this);
-        viewMapButton = (Button)findViewById(R.id.viewMapButton);
+        DataReportSource data = new SourceDataBase(this);
+        Button viewMapButton = (Button) findViewById(R.id.viewMapButton);
 
         viewMapButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,16 +37,16 @@ public class ViewReport extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), MapsActivity.class));
             }
         });
-        lv = (ListView) findViewById(R.id.list);
+        ListView lv = (ListView) findViewById(R.id.list);
         final List<WaterReport> report_list = data.getAllReports();
-        List<String> reportString = new ArrayList<String>();
+        List<String> reportString = new ArrayList<>();
         for(WaterReport r: report_list) {
             reportString.add( "" + order + r.toString());
             order++;
         }
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, reportString);
         lv.setAdapter(arrayAdapter);
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
