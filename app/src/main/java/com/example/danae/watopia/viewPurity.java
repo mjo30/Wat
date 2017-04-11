@@ -20,10 +20,8 @@ import java.util.List;
 
 // class that enables workers and managers to view Purity report
 public class viewPurity extends AppCompatActivity {
-    Button chartButton;
-    private DataSource data;
-    private ListView lv;
     private static int placed;
+    @SuppressWarnings("Convert2Diamond")
     @Override
     // method that sets appropriate layout
     // creates button that directs user to chart activity class
@@ -32,27 +30,27 @@ public class viewPurity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         int order = 0;
-        data = new ReportDataBase(this);
+        DataSource data = new ReportDataBase(this);
         setContentView(R.layout.activity_view_purity);
-        chartButton = (Button) findViewById(R.id.chart);
+        Button chartButton = (Button) findViewById(R.id.chart);
         chartButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), ChartActivity.class));
             }
         });
-        lv = (ListView) findViewById(R.id.list2);
+        ListView lv = (ListView) findViewById(R.id.list2);
         final List<QualityReport> report_list = data.getAllReports();
-        List<String> reportString = new ArrayList<String>();
+        List<String> reportString = new ArrayList<>();
         for(QualityReport r: report_list) {
             reportString.add( "" + order + r.toString());
             order++;
         }
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, reportString);
         lv.setAdapter(arrayAdapter);
 
-        arrayAdapter = new ArrayAdapter<String>(this,
+        arrayAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, reportString);
         lv.setAdapter(arrayAdapter);
 
