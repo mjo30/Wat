@@ -1,11 +1,5 @@
 package com.example.danae.watopia.model;
 
-/**
- * Created by danae on 2/27/2017.
- */
-/**
- * enum to represent various water types.
- */
 public enum WaterType {
     BOTTLED("Bottled"),
     WELL("Well"),
@@ -13,7 +7,7 @@ public enum WaterType {
     LAKE("Lake"),
     SPRING("Spring"),
     OTHER("Other");
-    private String waterType;
+    private final String waterType;
     WaterType(String waterType) {
         this.waterType = waterType;
     }
