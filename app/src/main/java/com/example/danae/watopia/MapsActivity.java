@@ -14,14 +14,11 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import com.example.danae.watopia.model.WaterReport;
 
-import java.util.List;
-
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
     private static int number = 0;
-    private GoogleMap mMap;
     boolean isClicked = true;
-    DataReportSource db;
+    private DataReportSource db;
     PopupWindow popUpWindow;
     TextView myMsg;
     LinearLayout mainLayout;
@@ -48,10 +45,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
         for (WaterReport myReport : db.getAllReports()) {
             LatLng myLatLng = new LatLng(myReport.getLatitude(),myReport.getLongitude());
-            mMap.addMarker(new MarkerOptions().position(myLatLng).title(("condition:"+myReport.getWaterCondition()+" / "+"type:"+myReport.getWaterType())));
+            googleMap.addMarker(new MarkerOptions().position(myLatLng).title(("condition:"+myReport.getWaterCondition()+" / "+"type:"+myReport.getWaterType())));
         }
 
     }
