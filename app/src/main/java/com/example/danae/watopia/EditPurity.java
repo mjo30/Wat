@@ -15,18 +15,18 @@ import com.example.danae.watopia.model.QualityReport;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by danae on 3/25/2017.
- */
+
 
 public class EditPurity extends AppCompatActivity {
-    TextView date, number, name;
-    EditText location, virus, contamination;
-    Spinner condition;
-    Button editBtn, cancelBtn;
-    DataBaseHandler db;
-    DataSource reportdata;
-    QualityReport myReport;
+    private TextView date;
+    private TextView name;
+    private EditText location;
+    private EditText virus;
+    private EditText contamination;
+    private Spinner condition;
+    private DataBaseHandler db;
+    private DataSource reportdata;
+    private QualityReport myReport;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,30 +47,30 @@ public class EditPurity extends AppCompatActivity {
         }
         date = (TextView) findViewById(R.id.dateEdit);
         name = (TextView) findViewById(R.id.nameEdit);
-        number = (TextView) findViewById(R.id.numberEdit);
+        TextView number = (TextView) findViewById(R.id.numberEdit);
         location = (EditText) findViewById(R.id.locationEdit);
         virus = (EditText) findViewById(R.id.virusEdit);
         contamination = (EditText) findViewById(R.id.contaminationEdit);
         condition = (Spinner) findViewById(R.id.conditionSpinner);
-        editBtn = (Button) findViewById(R.id.edit);
-        cancelBtn = (Button) findViewById(R.id.cancelBtn);
-        List<String> types = new ArrayList<String>();
+        Button editBtn = (Button) findViewById(R.id.edit);
+        Button cancelBtn = (Button) findViewById(R.id.cancelBtn);
+        List<String> types = new ArrayList<>();
         types.add(0, "Safe");
         types.add(1, "Treatable");
         types.add(2, "Unsafe");
-        ArrayAdapter<String> typesAdapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> typesAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, types);
         typesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         condition.setAdapter(typesAdapter);
         date.setText(myReport.getDate());
         name.setText(myReport.getName());
-        number.setText(""+myReport.getNumber());
+        number.setText(getString(R.string.blank, myReport.getNumber()));
         location.setText(myReport.getLocation());
-        virus.setText(""+ myReport.getVirus());
-        contamination.setText("" + myReport.getContamination());
+        virus.setText(getString(R.string.blank, myReport.getVirus()));
+        contamination.setText(getString(R.string.blank, myReport.getContamination()));
 
         editBtn = (Button) findViewById(R.id.edit);
-        db = new DataBaseHandler(EditPurity.this, null, null, 4);
+        db = new DataBaseHandler(EditPurity.this);
         editBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
