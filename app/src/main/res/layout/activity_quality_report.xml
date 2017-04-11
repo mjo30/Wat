@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_quality_report"
@@ -11,7 +12,7 @@
     tools:context="com.example.danae.watopia.qualityReport">
 
     <TextView
-        android:text="Date"
+        android:text="@string/Date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -25,10 +26,10 @@
         android:layout_alignParentStart="true"
         android:id="@+id/dateEdit"
         android:layout_alignParentEnd="true"
-        android:textSize = "15dp"/>
+        android:textSize = "15sp"/>
 
     <TextView
-        android:text="Number"
+        android:text="@string/Numer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/dateEdit"
@@ -45,7 +46,7 @@
         android:textSize="15sp" />
 
     <TextView
-        android:text="Name"
+        android:text="@string/Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/numberEdit"
@@ -61,7 +62,7 @@
         android:textSize="15sp" />
 
     <TextView
-        android:text="Location"
+        android:text="@string/Location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/nameEdit"
@@ -76,11 +77,12 @@
         android:layout_below="@+id/locationtext"
         android:layout_alignParentStart="true"
         android:id="@+id/locationEdit"
+        android:labelFor="@+id/locationEdit"
         android:layout_alignParentEnd="true"
         android:textSize="15sp" />
 
     <TextView
-        android:text="Virus PPM"
+        android:text="@string/Virus_PPM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/locationEdit"
@@ -95,11 +97,12 @@
         android:layout_below="@+id/textView28"
         android:layout_alignParentStart="true"
         android:id="@+id/virusEdit"
+        android:labelFor="@+id/virusEdit"
         android:layout_alignParentEnd="true"
         android:textSize="15sp" />
 
     <TextView
-        android:text="Condition PPM"
+        android:text="@string/Condition_PPM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/virusEdit"
@@ -112,13 +115,14 @@
         android:inputType="numberDecimal"
         android:ems="10"
         android:id="@+id/contaminationEdit"
+        android:labelFor="@+id/contaminationEdit"
         android:textSize="15sp"
         android:layout_below="@+id/iiiii"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="Condition"
+        android:text="@string/Condition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/contaminationEdit"
@@ -134,7 +138,7 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Submit"
+        android:text="@string/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -143,7 +147,7 @@
         android:id="@+id/edit" />
 
     <Button
-        android:text="Cancel"
+        android:text="@string/Cancel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
