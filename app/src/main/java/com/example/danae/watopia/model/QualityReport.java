@@ -4,12 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- * Created by Minky on 2017-03-13.
- */
-
 public class QualityReport {
-    public static List<QualityReport> qualityReports = new ArrayList<>();
+    private static final List<QualityReport> qualityReports = new ArrayList<>();
     public static List<String> conditions = Arrays.asList("Safe", "Treatable", "Unsafe");
     private long number;
     private String location;
@@ -81,7 +77,7 @@ public class QualityReport {
     }
     public int getYear() {
         int year = 0;
-        String temp = null;
+        String temp;
         if (date != null) {
             temp = date.substring(0,4);
             year = Integer.parseInt(temp);
