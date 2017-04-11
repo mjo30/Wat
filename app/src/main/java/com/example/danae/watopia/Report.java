@@ -21,17 +21,15 @@ import java.util.List;
 
 public class Report extends AppCompatActivity {
 
-    EditText nameEdit;
-    EditText latEdit;
-    EditText longEdit;
-    EditText dateEdit;
-    TextView numberEdit;
-    Spinner typeSpinner;
-    Spinner conditionSpinner;
-    Button submitBtn;
-    DataBaseHandler db;
+    private TextView nameEdit;
+    private EditText latEdit;
+    private EditText longEdit;
+    private EditText dateEdit;
+    private Spinner typeSpinner;
+    private Spinner conditionSpinner;
+    private DataBaseHandler db;
     private DataReportSource data;
-    public int count = 0;
+    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,11 +41,11 @@ public class Report extends AppCompatActivity {
         String date = df.format(Calendar.getInstance().getTime());
         dateEdit = (EditText) findViewById(R.id.dateEdit);
         dateEdit.setText(date);
-        db = new DataBaseHandler(Report.this, null, null, 4);
-        nameEdit = (EditText) findViewById(R.id.nameEdit);
+        db = new DataBaseHandler(Report.this);
+        nameEdit = (TextView) findViewById(R.id.nameEdit);
         nameEdit.setText(db.getName(LoginActivityPage.getUserName()));
 
-        numberEdit = (TextView) findViewById(R.id.numberEdit);
+        TextView numberEdit = (TextView) findViewById(R.id.numberEdit);
         for (WaterReport r: data.getAllReports()) {
             count++;
         }
@@ -61,25 +59,25 @@ public class Report extends AppCompatActivity {
         latEdit = (EditText) findViewById(R.id.latEdit);
         longEdit = (EditText) findViewById(R.id.longEdit);
 
-        List<String> types = new ArrayList<String>();
+        List<String> types = new ArrayList<>();
         for (int i = 0; i < WaterType.values().length; i++) {
             types.add(WaterType.values()[i].toString());
         }
-        ArrayAdapter<String> typesAdapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> typesAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, types);
         typesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         typeSpinner.setAdapter(typesAdapter);
 
-        List<String> conditions = new ArrayList<String>();
+        List<String> conditions = new ArrayList<>();
         for (int i = 0; i < WaterCondition.values().length; i++) {
             conditions.add(WaterCondition.values()[i].toString());
         }
-        ArrayAdapter<String> conditionsAdapter = new ArrayAdapter<String>(this,
+        ArrayAdapter<String> conditionsAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item, conditions);
         conditionsAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         conditionSpinner.setAdapter(conditionsAdapter);
 
-        submitBtn = (Button) findViewById(R.id.submitBtn);
+        Button submitBtn = (Button) findViewById(R.id.submitBtn);
 
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,12 +85,12 @@ public class Report extends AppCompatActivity {
                 data.createReport(nameEdit.getText().toString(), dateEdit.getText().toString(),
                         latEdit.getText().toString(), longEdit.getText().toString(),
                         typeSpinner.getSelectedItem().toString(), conditionSpinner.getSelectedItem().toString());
-                if (db.getKeyStanding(LoginActivityPage.getUserName()).equals("User")) {
-                    startActivity(new Intent(getApplicationContext(), LoggedIn2.class));
+                if (db.getKeyStanding(LoginActivityPage.getUserName()).equals("Manager")) {
+                    startActivity(new Intent(getApplicationContext(), managerLoggedIn.class));
                 } else if (db.getKeyStanding(LoginActivityPage.getUserName()).equals("Worker")) {
                     startActivity(new Intent(getApplicationContext(), workerLoggedIn.class));
                 } else {
-                    startActivity(new Intent(getApplicationContext(), managerLoggedIn.class));
+                    startActivity(new Intent(getApplicationContext(), LoggedIn2.class));
                 }
             }
         });
