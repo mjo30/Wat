@@ -12,10 +12,11 @@ import android.widget.TextView;
 import com.example.danae.watopia.model.RegisteredUsers;
 
 public class LoggedIn extends AppCompatActivity {
-    Button cancel, edit;
-    DataBaseHandler db;
-    EditText password, name, username;
-    TextView standing;
+    private DataBaseHandler db;
+    private EditText password;
+    private EditText name;
+    private EditText username;
+
     /**
      * The onCreate method is called when the Fragment instance is created
      * Users are allowed to input their username and password or to cancel to
@@ -27,11 +28,11 @@ public class LoggedIn extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_logged_in);
-        db = new DataBaseHandler(LoggedIn.this, null, null, 3);
+        db = new DataBaseHandler(LoggedIn.this);
         password = (EditText) findViewById(R.id.password);
         name = (EditText) findViewById(R.id.name);
         username = (EditText) findViewById(R.id.username);
-        standing = (TextView) findViewById(R.id.standing);
+        TextView standing = (TextView) findViewById(R.id.standing);
 
         final String myusername = LoginActivityPage.getUserName();
         String storedPw = db.getRegister(myusername);
@@ -43,7 +44,7 @@ public class LoggedIn extends AppCompatActivity {
         password.setText(storedPw);
         standing.setText(mystanding);
 
-        edit = (Button) findViewById(R.id.button);
+        Button edit = (Button) findViewById(R.id.button);
 
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,7 +62,7 @@ public class LoggedIn extends AppCompatActivity {
             }
         });
 
-        cancel = (Button)findViewById(R.id.button3);
+        Button cancel = (Button) findViewById(R.id.button3);
 
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
