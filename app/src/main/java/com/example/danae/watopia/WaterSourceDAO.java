@@ -10,21 +10,17 @@ import com.example.danae.watopia.model.WaterReport;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Minky on 2017-04-02.
- */
-
-public class WaterSourceDAO  {
+class WaterSourceDAO  {
         //Database table column names
-    public static final String TABLE_NAME = "SourceReport";
-    public static final String COLUMN_ID = "id";
-    public static final String COLUMN_NAME = "name";
-    public static final String COLUMN_DATE = "date";
-    public static final String COLUMN_LATITUDE = "latitude";
-    public static final String COLUMN_LONGITUDE = "longitude";
-    public static final String COLUMN_TYPE = "water_type";
-    public static final String COLUMN_CONDITION = "water_condition";
-    public static final String[] allColumns = {WaterSourceDAO.COLUMN_DATE, WaterSourceDAO.COLUMN_ID,
+    private static final String TABLE_NAME = "SourceReport";
+    private static final String COLUMN_ID = "id";
+    private static final String COLUMN_NAME = "name";
+    private static final String COLUMN_DATE = "date";
+    private static final String COLUMN_LATITUDE = "latitude";
+    private static final String COLUMN_LONGITUDE = "longitude";
+    private static final String COLUMN_TYPE = "water_type";
+    private static final String COLUMN_CONDITION = "water_condition";
+    private static final String[] allColumns = {WaterSourceDAO.COLUMN_DATE, WaterSourceDAO.COLUMN_ID,
                 WaterSourceDAO.COLUMN_NAME, WaterSourceDAO.COLUMN_LATITUDE,
                 WaterSourceDAO.COLUMN_LONGITUDE, WaterSourceDAO.COLUMN_TYPE, WaterSourceDAO.COLUMN_CONDITION};
         private static final int ID_NUMBER = 1;
@@ -142,24 +138,26 @@ public class WaterSourceDAO  {
 
             return report;
         }
-        public static WaterReport findByDate(SQLiteDatabase database, String date) {
-            String query = "SELECT * FROM " + TABLE_NAME + " WHERE " + COLUMN_DATE + " ='" + date;
-            Cursor  cursor = database.rawQuery(query,null);
-            WaterReport report = null;
-
-            if (cursor != null) {
-                cursor.moveToFirst();
-
-                report = cursorToWaterReport(cursor);
-
-                cursor.close();
-
-            }
-
-
-
-            return report;
-        }
+// --Commented out by Inspection START (4/11/2017 1:40 AM):
+//        public static WaterReport findByDate(SQLiteDatabase database, String date) {
+//            String query = "SELECT * FROM " + TABLE_NAME + " WHERE " + COLUMN_DATE + " ='" + date;
+//            Cursor  cursor = database.rawQuery(query,null);
+//            WaterReport report = null;
+//
+//            if (cursor != null) {
+//                cursor.moveToFirst();
+//
+//                report = cursorToWaterReport(cursor);
+//
+//                cursor.close();
+//
+//            }
+//
+//
+//
+//            return report;
+//        }
+// --Commented out by Inspection STOP (4/11/2017 1:40 AM)
 //    public static List<WaterReport> getAllByMajor(SQLiteDatabase database, String major) {
 //        String query = "SELECT * FROM " + TABLE_NAME + " WHERE " + COLUMN_MAJOR + " ='" + major;
 //
