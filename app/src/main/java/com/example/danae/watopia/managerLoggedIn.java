@@ -34,7 +34,7 @@ public class managerLoggedIn extends AppCompatActivity {
      * When report button is pressed, users will be able to write a report
      * When edit button is pressed, users will be able to edit their profile
      * When view button is pressed, users will be able to see a list of reports
-     * When logout button is pressed, users will log out from the system
+     * When logout button is pressed, users will log out from the system.
      * */
     @Override
     public boolean onOptionsItemSelected(android.view.MenuItem item) {
