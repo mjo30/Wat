@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-// this is a class that user will see when app is started
+// this is a class that user will see when app is started.
 public class WelcomeScreen extends AppCompatActivity {
 
     @Override
