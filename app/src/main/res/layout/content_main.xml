@@ -15,7 +15,7 @@
     tools:showIn="@layout/activity_main">
 
     <Button
-        android:text="View My Profile"
+        android:text="@string/View_My_Profile"
         android:background="@color/buttonyellow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
