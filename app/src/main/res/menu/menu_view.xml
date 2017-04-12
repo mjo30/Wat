@@ -9,8 +9,8 @@
         app:showAsAction="never" />
     <item
         android:id="@+id/show_graph"
-        android:title="Graph" />
+        android:title="@string/Graph" />
     <item
         android:id= "@+id/show_map"
-        android:title="Map" />
+        android:title="@string/Map" />
 </menu>
