@@ -82,17 +82,68 @@ public class Report extends AppCompatActivity {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                data.createReport(nameEdit.getText().toString(), dateEdit.getText().toString(),
-                        latEdit.getText().toString(), longEdit.getText().toString(),
-                        typeSpinner.getSelectedItem().toString(), conditionSpinner.getSelectedItem().toString());
-                if (db.getKeyStanding(LoginActivityPage.getUserName()).equals("Manager")) {
-                    startActivity(new Intent(getApplicationContext(), managerLoggedIn.class));
-                } else if (db.getKeyStanding(LoginActivityPage.getUserName()).equals("Worker")) {
-                    startActivity(new Intent(getApplicationContext(), workerLoggedIn.class));
+                boolean allLongNum = true;
+                String longitude = longEdit.getText().toString();
+                allLongNum = isLatLong(longitude);
+                boolean allLatNum = true;
+                String latitude = latEdit.getText().toString();
+                allLatNum = isLatLong(latitude);
+                if (allLatNum && allLongNum) {
+                    data.createReport(nameEdit.getText().toString(), dateEdit.getText().toString(),
+                            latEdit.getText().toString(), longEdit.getText().toString(),
+                            typeSpinner.getSelectedItem().toString(), conditionSpinner.getSelectedItem().toString());
+                    if (db.getKeyStanding(LoginActivityPage.getUserName()).equals("User")) {
+                        startActivity(new Intent(getApplicationContext(), LoggedIn2.class));
+                    } else if (db.getKeyStanding(LoginActivityPage.getUserName()).equals("Worker")) {
+                        startActivity(new Intent(getApplicationContext(), workerLoggedIn.class));
+                    } else {
+                        startActivity(new Intent(getApplicationContext(), managerLoggedIn.class));
+                    }
+
                 } else {
-                    startActivity(new Intent(getApplicationContext(), LoggedIn2.class));
+                    AlertDialog.Builder builder1 = new AlertDialog.Builder(Report.this);
+                    builder1.setMessage("Invalid input for longitude or latitude.");
+                    builder1.setCancelable(true);
+                    builder1.setPositiveButton(
+                            "OK",
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.cancel();
+                                }
+                            });
+                    AlertDialog alert11 = builder1.create();
+                    alert11.show();
                 }
             }
         });
+    }
+
+    /**
+     * this method checks whether the input of latitude and longitude is a valid
+     * String that consists of digits and sign.
+     * @param latitude lat or long input
+     * @return whether or not the latitude or longitude is valid
+     */
+    public static boolean isLatLong(String latitude) {
+        if (latitude == null || latitude.equals("")) {
+            return false;
+        }
+        boolean allLatNum = true;
+        for (int i = 0; i < latitude.length(); i++) {
+            if (latitude.contains("-")) {
+                int point = latitude.indexOf(".");
+                int direction = latitude.indexOf("-");
+                if (!Character.isDigit(latitude.charAt(i))
+                        && i != point && i != direction) {
+                    allLatNum = false;
+                }
+            } else {
+                int point = latitude.indexOf(".");
+                if (!Character.isDigit(latitude.charAt(i)) && i != point) {
+                    allLatNum = false;
+                }
+            }
+        }
+        return allLatNum;
     }
 }
